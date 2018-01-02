@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>ClienD extension</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="icon" href="http://cliend.ru/static/images/favicon.ico?v8.2" type="image/x-icon">
+    <link rel="stylesheet" href="http://cliend.ru/static/styles/mobile3/bootstrap_cliend.full.min.css">
+    <link rel="stylesheet" href="http://cliend.ru/static/styles/mobile3/base2.min.css">
+    <link rel="stylesheet" href="dist/style.min.css">
+    <meta name="google-site-verification" content="idAq_fY3TfM2I5IgEldg6emGQ9ijgpLFd4XVOIWy2LM" />
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/hehpfoecbadnfboagjkeifdfgajhlloh">
+    
+    <meta name="description" content="Расширение ClienD - Расширение для Портала электронного образования Республики Татарстан edu.tatar.ru. Вносит небольшие улучшения на портале. Скачать, установить расширение ClienD" />
+    <meta name="keywords" content="cliend.ru, ext.cliend.ru, cliend для учителей, edu.tatar.ru, электронное образование в республике татарстан, программа для учителей, едутатар, едутатар тормозит, улучшение едутатар, ускорение едутатар, расширение cliend, cliend ext, cliend extension, cliend github, учителям, электронный журнал в татарстане, татарстан, казань" />
+
+    <!-- apple --> 
+    <link rel="apple-touch-icon" href="http://cliend.ru/static/images/logo57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://cliend.ru/static/images/logo72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://cliend.ru/static/images/logo114.png">
+
+    <!-- winphone -->
+    <meta name="application-name" content="Расширение ClienD" />
+    <meta name="msapplication-TileColor" content="#0099cc" />
+    <meta name="msapplication-square70x70logo" content="http://cliend.ru/static/images/logo70.png" />
+    <meta name="msapplication-square150x150logo" content="http://cliend.ru/static/images/logo150.png" />
+    <meta name="msapplication-square310x310logo" content="http://cliend.ru/static/images/logo310.png" />
+
+    <meta property="og:url" content="http://ext.cliend.ru/"/>
+    <meta property="og:site_name" content="Расширение ClienD"/>
+    <meta property="og:description" content="Расширение для Портала электронного образования Республики Татарстан edu.tatar.ru. Вносит небольшие улучшения на портале"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://cliend.ru/static/images/logo310.png"/>
+        
+    <meta name="twitter:card" value="summary"/>
+    <meta name="twitter:url" value="http://ext.cliend.ru/"/>
+    <meta name="twitter:title" value="Расширение ClienD"/>
+    <meta name="twitter:description" value="Расширение для Портала электронного образования Республики Татарстан edu.tatar.ru. Вносит небольшие улучшения на портале"/>
+    <meta name="twitter:image" value="http://cliend.ru/static/images/logo150.png"/>
+    <meta name="twitter:site" value="@cliend4edu"/>
+    <meta name="twitter:creator" value="@clienddev"/>
+</head>
+<body>
+    <div id="wrap">
+        <div id="login_layout" class="layout">
+            <header>
+                <h1 id="logo">ClienD</h1>
+                <h2>Удобный доступ к edu.tatar.ru</h2>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 content text-center" id="main_header">
+                        <h1>Расширение ClienD</h1>
+                    </div>  
+                    <nav class="navbar navbar-default cliend-navbar col-md-10 col-md-offset-1">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#index">Главная</a></li>
+                                    <li><a href="#teacher">Учителям</a></li>
+                                    <li><a href="#admin">Системным админстраторам</a></li>
+                                    <li><a href="#faq">Частые вопросы</a></li>
+                                </ul>
+                                <button href="#" class="btn btn-info install_button navbar-btn"><i class="fa fa-download"></i> Установить</button>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                    <div id="pages">
+                        <div data-page="index">
+    <div id="index_carousel" class="carousel slide col-md-10 col-md-offset-1 content" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/photos/edu.png" alt="...">
+                <div class="carousel-caption">
+                    <h2>
+                        Расширение для портала <br>
+                        <a href="http://edu.tatar.ru" target="_blank" rel="nofollow">"Электронное образование в РТ"</a>
+                    </h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/photos/marks-1.png" alt="...">
+                <div class="carousel-caption">
+                    <h3>Выставление оценок с клавиатуры</h3>
+                    <p>
+                        Нажмите клавиши от <kbd>1</kbd> до <kbd>5</kbd>, чтобы выставить оценку<br>
+                        Нажмите клавиши <kbd>0</kbd>, чтобы убрать оценку<br>
+                        Нажмите клавиши <kbd>Н</kbd> или <kbd>Б</kbd>, чтобы поставить отметку об отсутствии<br>
+                        Используйте стреки <kbd>&larr;</kbd>, <kbd>&uarr;</kbd>, <kbd>&rarr;</kbd>, <kbd>&darr;</kbd> для перемещения по электронному журналу
+                    </p>
+                    <a href="#teacher" class="btn btn-primary btn-lg">Подробнее</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/photos/vk.png" alt="...">
+                <div class="carousel-caption">
+                    <h3>Публикация новостей из ВК на сайт школы</h3>
+                    <p>Нажатием одной кнопки</p>
+                    <a href="#admin" class="btn btn-primary btn-lg">Подробнее</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/photos/admin_page_sort.png" alt="...">
+                <div class="carousel-caption">
+                    <h3>Улучшения в личном кабинете администратора сайта</h3>
+                    <a href="#admin" class="btn btn-primary btn-lg">Подробнее</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#index_carousel" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+        </a>
+        <a class="right carousel-control" href="#index_carousel" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div class="col-md-10 col-md-offset-1 content">
+        <h1>Функции</h1>
+
+<ul><li>Личный кабинет администратора сайта<ul><li>Структура<ul><li>кнопка &quot;Отредактировать страницу&quot;</li></ul></li><li>Страницы<ul><li>поиск по страницам</li><li>сортировка страниц</li></ul></li><li>Новостные блоки<ul><li>добавление новостей из ВКонтакте</li><li>автоматическое проставление галочек &quot;Район&quot; и &quot;Республика&quot; при добавлении новости</li></ul></li></ul></li><li>Личный кабинет учителя<ul><li>индикатор загрузки выставления оценки</li><li>выставление оценок клавиатурой (1-5 - отметки, 0 - удаление отметки, &quot;н&quot; - не был, &quot;б&quot; - болел, &quot;х&quot; - удаление отметки об отсутствии)</li><li>переход по таблице журнала с помощью стрелок на клавиатуре</li><li>при заполнении тем уроков - автовыбор урока, на который было задано домашнее задание</li><li>прокручивание экрана к основному содержимому страницы</li></ul></li></ul>
+    </div>
+</div>
+                        <div data-page="teacher">
+    <div class="col-md-10 col-md-offset-1 content">
+        <h1 class="page-header">Выставление оценок с помощью клавиатуры</h1>
+        <p>После установки расширения появляется возможность ставить оценки с помощью клавиатуры. </p>
+        <p>Для начала работы нужно <b>поставить курсор</b> на одну из клеточек журнала. Затем нажмите на клавиатуре цифру, соответствующую оценке. Например, <b>кнопка <kbd>5</kbd> поставит оценку "5"</b>.</p>
+
+        <img src="images/photos/marks-1.png" alt="" class="img-responsive img-thumbnail">
+
+        <p>После того, как оценка поставится, нажмите на <kbd>&darr;</kbd>, чтобы спуститься вниз.</p>
+        <p>Поставим <b>оценку 4 с помощью кнопки <kbd>4</kbd></b>.</p>
+
+        <img src="images/photos/marks-2.png" alt="" class="img-responsive img-thumbnail">
+
+        <p><b>После завершения операции страница будет выглядеть так:</b></p>
+
+        <img src="images/photos/marks-3.png" alt="" class="img-responsive img-thumbnail">
+
+        <h1 class="page-header">Полный список клавиш</h1>
+        <ul class="kbd">
+            <li><kbd>1</kbd> - поставить оценку "1"</li>
+            <li><kbd>2</kbd> - поставить оценку "2"</li>
+            <li><kbd>3</kbd> - поставить оценку "3"</li>
+            <li><kbd>4</kbd> - поставить оценку "4"</li>
+            <li><kbd>5</kbd> - поставить оценку "5"</li>
+            <li><kbd>0</kbd> - убрать оценку</li>
+            <li><kbd>Н</kbd> - поставить отметку "не был"</li>
+            <li><kbd>Б</kbd> - поставить отметку "болел"</li>
+            <li><kbd>Х</kbd> - убрать отметку об отсутствии</li>
+        </ul>
+    </div>
+</div>
+                        <div data-page="admin">
+    <div class="col-md-10 col-md-offset-1 content">
+        <h1 class="page-header">Структура</h1>
+        <p><b>При редактировании вершины с типом "Простая страница" появляется прямая ссылка для редактирования привязанной страницы:</b></p>
+        <img src="images/photos/admin_edit_page.png" alt="" class="img-thumbnail">
+
+        <h1 class="page-header">Страницы</h1>
+        <p><b>Поиск по страницам:</b></p>
+		<img src="images/photos/admin_page_search.png" alt="" class="img-thumbnail">        
+
+		<p><b>Сортировка страницы при нажатии на специальную стрелочку в заголовке таблицы:</b></p>
+		<img src="images/photos/admin_page_sort.png" alt="" class="img-thumbnail">        		
+
+		<h1 class="page-header">Загрузка новостей из ВКонтакте</h1>
+		<ol>
+			<li><b>Откройте стену</b> человека или группы</li>
+			<li>Нажмите на кнопку <b>"Поделиться"</b> (<img src="images/photos/vk_share.png" alt="">)</li>
+			<li>Нажмите на кнопку <b>"В новости edu.tatar.ru"</b>. Откроется список новостных блоков</li>
+			<li>Выберите нужный новостной блок</li>
+			<li>Нажмите на кнопку <b>"Добавить новость"</b></li>
+			<li>Название и текст новости добавятся автоматически. Фотографию придется добавить в полуручном режиме. </li>
+			<li>
+				<b>Добавление фотографии</b>
+				<ul>
+					<li>Скопировать ссылку из получившегося окна (<kbd>CTRL+C</kbd>)</li>
+					<li>Откроется окно добавления фотографии к новости</li>
+					<li>Нажать на кнопку "Выбрать файл" и вставить ссылку, которую мы скопировали до этого (<kbd>CTRL+V</kbd>)</li>
+					<li>Выделить размер миниатюры</li>
+					<li>Сохранить</li>
+				</ul>
+			</li>
+			<li>Завершить добавление новости</li>
+		</ol>
+		<img src="images/photos/vk.png" alt="" class="img-thumbnail img-responsive">
+		<img src="images/photos/vk-2.png" alt="" class="img-thumbnail img-responsive">
+		<img src="images/photos/vk-3.png" alt="" class="img-thumbnail">
+		<p>Также на странице добавления есть кнопка "Добавить пост из ВКонтакте", которая помогает загрузить запись из ВКонтакте по ссылке.</p>
+		<p>Функционал не будет работать в школьной сети Интернет из-за того, что социальная сеть ВКонтакте там заблокирована.</p>
+    </div>
+</div>
+                        <div data-page="faq">
+    <div class="col-md-10 col-md-offset-1 content">
+    	<br>
+    	<p>
+			<b>Передает ли расширение мои данные третьим лицам?</b><br>
+			Нет. Расширение не использует сторонние сервера и сервисы для работы. Все данные обрабатываются в браузере и никуда не отправляются. Вы можете убедиться в этом сами - <a href="http://github.com/ClienDDev/ClienD-ext" target="_blank">исходный код открыт для всех</a>.
+		</p>
+		<p>
+        	<b>Нашли ошибку? Есть предложения?</b><br>
+        	Пишите ваши предложения нам на почту <a href="mailto:support@clienddev.ru">support@clienddev.ru</a>.
+        </p>
+		<p>
+			<b>Умеете программировать и хотите добавить функцию?</b><br>
+			Добро пожаловать в <a href="http://github.com/ClienDDev/ClienD-ext" target="_blank">наш Github репозиторий</a>. Перед тем, как выполнять коммиты, прочитайте <a href="https://github.com/ClienDDev/ClienD-ext/blob/dev/contribution.md" target="_blank"></a>специальную инструкцию.
+		</p>
+		<p>
+			<b>Что будет в будущих версиях?</b><br>
+			<a href="https://trello.com/b/LbwwbjwL/cliend-ext" target="_blank">Здесь есть список некоторых функций</a>, которые будут добавлены в будущих версиях. Если Вы хотите предложить что-то свое, пишите нам на почту <a href="mailto:support@clienddev.ru">support@clienddev.ru</a>.
+		</p>
+
+		<p><b>Расширение мешает в работе. Как его удалить?</b></p>
+		<ul>
+			<li>Зайдите в настройки Chrome (Меню/Настройки)</li>
+			<li>Перейдите на вкладку "Расширения"</li>
+			<li>Найдите расширение ClienD ext</li>
+			<li>Справа нажмите на кнопку "Удалить" (<img src="images/photos/chrome_trash.png" alt="">)</li>
+		</ul>
+		<p>После этого расширения удаляется полностью.</p>
+    </div>
+</div>
+                    </div>
+                    <div class="col-md-10 col-md-offset-1 content text-center" id="install_block">
+                        <div type="button" class="btn-lg btn btn-primary btn-block install_button" id="install_button">
+                            <h3><i class="fa fa-download"></i> Установить расширение</h3>
+                        </div>
+                        <a href="https://chrome.google.com/webstore/detail/hehpfoecbadnfboagjkeifdfgajhlloh" target="_blank" class="btn btn-default" id="chrome_web_store_button">
+                            <i class="fa fa-chrome"></i> Web store
+                        </a>
+                        <a href="http://github.com/ClienDDev/ClienD-ext" target="_blank" class="btn btn-default">
+                            <i class="fa fa-github"></i> Исходный код
+                        </a>
+                        <a href="https://github.com/ClienDDev/ClienD-ext/issues/new" target="_blank" class="btn btn-default">
+                            <i class="fa fa-exclamation"></i> Сообщить о проблеме
+                        </a>
+                        <a href="https://github.com/ClienDDev/ClienD-ext/releases" target="_blank" class="btn btn-default">
+                            <i class="fa fa-file"></i> История изменений
+                        </a>
+                        <a href="http://cliend.ru" class="btn btn-primary" target="_blank">Подпроект <b>ClienD</b></a>
+                    </div>
+                    <footer class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content">
+                        &copy; 2013-2016 <a href="http://clienddev.ru" target="_blank">ClienDDev team</a>. 
+                    </footer>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,100&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <script src="https://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://yastatic.net/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="libs/pathjs/path.min.js"></script>
+    <script src="js/main.js"></script>
+    
+	<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34344415 = new Ya.Metrika({ id:34344415, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/34344415" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+</body>
+</html>

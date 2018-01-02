@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>ClienD extension</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+
+    <link rel="icon" href="http://cliend.ru/static/images/favicon.ico?v8.2" type="image/x-icon">
+    <link rel="stylesheet" href="http://cliend.ru/static/styles/mobile3/bootstrap_cliend.full.min.css">
+    <link rel="stylesheet" href="http://cliend.ru/static/styles/mobile3/base2.min.css">
+    <link rel="stylesheet" href="dist/style.min.css">
+    <meta name="google-site-verification" content="idAq_fY3TfM2I5IgEldg6emGQ9ijgpLFd4XVOIWy2LM" />
+    <link rel="chrome-webstore-item" href="{{store_link}}">
+    
+    <meta name="description" content="Расширение ClienD - Расширение для Портала электронного образования Республики Татарстан edu.tatar.ru. Вносит небольшие улучшения на портале. Скачать, установить расширение ClienD" />
+    <meta name="keywords" content="cliend.ru, ext.cliend.ru, cliend для учителей, edu.tatar.ru, электронное образование в республике татарстан, программа для учителей, едутатар, едутатар тормозит, улучшение едутатар, ускорение едутатар, расширение cliend, cliend ext, cliend extension, cliend github, учителям, электронный журнал в татарстане, татарстан, казань" />
+
+    <!-- apple --> 
+    <link rel="apple-touch-icon" href="http://cliend.ru/static/images/logo57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://cliend.ru/static/images/logo72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://cliend.ru/static/images/logo114.png">
+
+    <!-- winphone -->
+    <meta name="application-name" content="Расширение ClienD" />
+    <meta name="msapplication-TileColor" content="#0099cc" />
+    <meta name="msapplication-square70x70logo" content="http://cliend.ru/static/images/logo70.png" />
+    <meta name="msapplication-square150x150logo" content="http://cliend.ru/static/images/logo150.png" />
+    <meta name="msapplication-square310x310logo" content="http://cliend.ru/static/images/logo310.png" />
+
+    <meta property="og:url" content="http://ext.cliend.ru/"/>
+    <meta property="og:site_name" content="Расширение ClienD"/>
+    <meta property="og:description" content="Расширение для Портала электронного образования Республики Татарстан edu.tatar.ru. Вносит небольшие улучшения на портале"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://cliend.ru/static/images/logo310.png"/>
+        
+    <meta name="twitter:card" value="summary"/>
+    <meta name="twitter:url" value="http://ext.cliend.ru/"/>
+    <meta name="twitter:title" value="Расширение ClienD"/>
+    <meta name="twitter:description" value="Расширение для Портала электронного образования Республики Татарстан edu.tatar.ru. Вносит небольшие улучшения на портале"/>
+    <meta name="twitter:image" value="http://cliend.ru/static/images/logo150.png"/>
+    <meta name="twitter:site" value="@cliend4edu"/>
+    <meta name="twitter:creator" value="@clienddev"/>
+</head>
+<body>
+    <div id="wrap">
+        <div id="login_layout" class="layout">
+            <header>
+                <h1 id="logo">ClienD</h1>
+                <h2>Удобный доступ к edu.tatar.ru</h2>
+            </header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 content text-center" id="main_header">
+                        <h1>Расширение ClienD</h1>
+                    </div>  
+                    <nav class="navbar navbar-default cliend-navbar col-md-10 col-md-offset-1">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#index">Главная</a></li>
+                                    <li><a href="#teacher">Учителям</a></li>
+                                    <li><a href="#admin">Системным админстраторам</a></li>
+                                    <li><a href="#faq">Частые вопросы</a></li>
+                                </ul>
+                                <button href="#" class="btn btn-info install_button navbar-btn"><i class="fa fa-download"></i> Установить</button>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                    <div id="pages">
+                        {% include 'pages/index.html' %}
+                        {% include 'pages/teacher.html' %}
+                        {% include 'pages/admin.html' %}
+                        {% include 'pages/faq.html' %}
+                    </div>
+                    <div class="col-md-10 col-md-offset-1 content text-center" id="install_block">
+                        <div type="button" class="btn-lg btn btn-primary btn-block install_button" id="install_button">
+                            <h3><i class="fa fa-download"></i> Установить расширение</h3>
+                        </div>
+                        <a href="{{store_link}}" target="_blank" class="btn btn-default" id="chrome_web_store_button">
+                            <i class="fa fa-chrome"></i> Web store
+                        </a>
+                        <a href="http://github.com/ClienDDev/ClienD-ext" target="_blank" class="btn btn-default">
+                            <i class="fa fa-github"></i> Исходный код
+                        </a>
+                        <a href="https://github.com/ClienDDev/ClienD-ext/issues/new" target="_blank" class="btn btn-default">
+                            <i class="fa fa-exclamation"></i> Сообщить о проблеме
+                        </a>
+                        <a href="https://github.com/ClienDDev/ClienD-ext/releases" target="_blank" class="btn btn-default">
+                            <i class="fa fa-file"></i> История изменений
+                        </a>
+                        <a href="http://cliend.ru" class="btn btn-primary" target="_blank">Подпроект <b>ClienD</b></a>
+                    </div>
+                    <footer class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 content">
+                        &copy; 2013-2016 <a href="http://clienddev.ru" target="_blank">ClienDDev team</a>. 
+                    </footer>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,100&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <script src="https://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://yastatic.net/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="libs/pathjs/path.min.js"></script>
+    <script src="js/main.js"></script>
+    
+	{% include 'metrika.html' %}
+</body>
+</html>

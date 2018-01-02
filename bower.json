@@ -1,0 +1,22 @@
+{
+  "name": "cliend-ext-landing",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "ClienDDev team"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pathjs": "*",
+    "font-awesome": "^4.5.0"
+  }
+}

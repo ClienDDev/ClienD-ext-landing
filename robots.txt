@@ -1,0 +1,7 @@
+User-agent:*
+Disallow: /templates/
+Disallow: *.json
+Disallow: gulpfile.js
+Allow:*
+
+Host: ext.cliend.ru
