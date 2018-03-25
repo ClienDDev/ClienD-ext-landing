@@ -7,7 +7,6 @@ var swig = require('gulp-swig');
 var markdown = require('markdown').markdown;
 var unirest = require('unirest');
 var runSequence = require('run-sequence');
-var GulpSSH = require('gulp-ssh');
 
 gulp.task('less', function() {
     return gulp.src('styles/style.less')
