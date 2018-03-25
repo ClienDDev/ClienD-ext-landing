@@ -35,7 +35,8 @@ gulp.task('swig', function() {
         .pipe(swig({
             data: {
                 store_link: 'https://chrome.google.com/webstore/detail/hehpfoecbadnfboagjkeifdfgajhlloh',
-                functions_list: functions_list
+                functions_list: functions_list,
+                year: (new Date()).getFullYear()
             }
         }))
         .pipe(gulp.dest('./'));
